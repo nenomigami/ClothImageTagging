@@ -198,3 +198,44 @@ def extract_category(categoryURL):
     return [("category" , re.search(r'(?<=com/).*(?=-c)',categoryURL).group())]
 
 main()
+f = open("header.csv",'w')
+header =['id',
+ 'category',
+ 'name',
+ 'Color',
+ 'Composition',
+ 'Style',
+ 'Sleeve Length',
+ 'Neckline',
+ 'Pattern Type',
+ 'Fabric',
+ 'Season',
+ 'Fit Type',
+ 'Length',
+ 'Placket Type',
+ 'Occasion',
+ 'Decoration',
+ 'Sleeve Type',
+ 'Hem Shaped',
+ 'Material',
+ 'Arabian Clothing',
+ 'Belt',
+ 'Type',
+ 'Lining',
+ 'Chest pad',
+ 'Waist Type',
+ 'Pant Type',
+ 'Closure Type',
+ 'Pant Length',
+ 'Silhouette',
+ 'Collar',
+ 'Shirt Type',
+ 'Suit Type',
+ 'Sweater Type',
+ 'Placket',
+ 'Bra Type',
+ 'Bottom Type',
+ 'Panty Type']
+wr = csv.writer(f)
+wr.writerow(header)
+f.close()
